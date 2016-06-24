@@ -24,7 +24,7 @@ public class Homepage extends PageObject_Base {
         driver.get("http://www.matthewlowry.co.uk");
     }
 
-    public void goToAbout() {
+    public void goToAboutPage() {
         aboutButton.click();
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.elementToBeClickable(By.className("entry-title")));

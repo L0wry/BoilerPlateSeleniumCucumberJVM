@@ -9,7 +9,7 @@ public class About extends PageObject_Base {
 
     public boolean verifyYouAreOnThePage(){
         String url = driver.getCurrentUrl();
-         if (url == "test"){
+         if (url == "http://www.matthewlowry.co.uk/about/"){
              return true;
          }
         else return false;

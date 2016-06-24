@@ -4,7 +4,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import pageobjects.Website;
-import testcontext.TestData;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -17,7 +16,7 @@ public class HomepageSteps {
 
     @When("^I click on 'about'$")
     public void i_click_on_about() throws Throwable {
-         Website.homepage().goToAbout();
+         Website.homepage().goToAboutPage();
     }
 
     @Then("^I am taken to the about page$")

@@ -6,17 +6,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverManager {
 
-    public static WebDriver _driver;
-    public static int MAX_TIMEOUT = 10;
+    public static WebDriver driver;
+
 
 
     public static WebDriver getDriver() {
-        if (_driver == null) {
+        if (driver == null) {
             return getNewDriver();
         }
 
         else{
-            return _driver;
+            return driver;
         }
     }
 

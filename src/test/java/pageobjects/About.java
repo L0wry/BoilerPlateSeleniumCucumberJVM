@@ -9,7 +9,7 @@ public class About extends PageObject_Base {
 
     public boolean verifyYouAreOnThePage(){
         String url = driver.getCurrentUrl();
-         if (url == url){
+         if (url == ""){
              return true;
          }
         else return false;

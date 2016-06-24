@@ -4,7 +4,9 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions   (plugin = {"pretty", "html:target/cucumber-html-report"},
+@CucumberOptions
+        (plugin = {"pretty", "html:target/cucumber-html-report"},
+        format = {"json:target/cucumber-results.json"},
         features = {"./src/test/resources/features"},
         glue = {"step_definitions"})
 public class CukeTest {}

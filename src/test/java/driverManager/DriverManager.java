@@ -21,7 +21,7 @@ public class DriverManager {
     }
 
     private static WebDriver getNewDriver() {
-        System.setProperty("webdriver.chrome.driver", "/Users/matthewlowry/IdeaProjects/boilerplateuiautomation/src/test/resources/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
         return new ChromeDriver();
 
     }

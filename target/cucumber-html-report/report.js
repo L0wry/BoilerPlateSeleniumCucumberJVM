@@ -6,6 +6,10 @@ formatter.feature({
   "id": "page-navigation",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 2920537803,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 6,
   "name": "Verify a user is able to navigate to the about page",
@@ -29,16 +33,30 @@ formatter.step({
   "name": "I am taken to the about page",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "HomepageSteps.i_am_on_the_homepage()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 3650997453,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "HomepageSteps.i_click_on_about()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1379588890,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomepageSteps.i_am_taken_to_the_about_page()"
+});
+formatter.result({
+  "duration": 100641420,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat step_definitions.HomepageSteps.i_am_taken_to_the_about_page(HomepageSteps.java:24)\n\tat ✽.Then I am taken to the about page(test.feature:9)\n",
+  "status": "failed"
+});
+formatter.after({
+  "duration": 180142376,
+  "status": "passed"
 });
 });

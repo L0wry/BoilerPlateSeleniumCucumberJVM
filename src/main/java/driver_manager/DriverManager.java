@@ -45,8 +45,6 @@ public class DriverManager {
                 driver = new FirefoxDriver();
                 break;
 
-            default:
-                throw new NullPointerException("browser type does not exist");
         }
 
         return driver;

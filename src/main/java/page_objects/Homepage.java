@@ -26,7 +26,5 @@ public class HomePage extends PageObject_Base {
 
     public void goToAboutPage() {
         aboutButton.click();
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.elementToBeClickable(By.className("entry-title")));
     }
 }

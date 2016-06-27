@@ -6,14 +6,14 @@ import org.openqa.selenium.WebDriver;
 public class Website {
 
     public static WebDriver driver;
-    private static HomePage homePage;
+    private static Homepage homepage;
     private static AboutPage aboutPage;
 
-    public static HomePage homePage() {
-        if (homePage == null){
-            homePage = new HomePage(driver);
+    public static Homepage homePage() {
+        if (homepage == null){
+            homepage = new Homepage(driver);
         }
-        return homePage;
+        return homepage;
     }
 
     public static AboutPage aboutPage() {

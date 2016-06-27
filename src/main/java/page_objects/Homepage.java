@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class HomePage extends PageObject_Base {
+public class Homepage extends PageObject_Base {
 
-    public HomePage(WebDriver driver) {
+    public Homepage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }

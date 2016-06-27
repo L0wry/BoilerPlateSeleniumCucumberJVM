@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: CukeTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 12.911 sec <<< FAILURE!
-Then I am taken to the about page(Scenario: Verify a user is able to navigate to the about page)  Time elapsed: 0.004 sec  <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 17.779 sec <<< FAILURE!
+Then I am taken to the about page(Scenario: Verify a user is able to navigate to the about page)  Time elapsed: 0.005 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -10,7 +10,7 @@ org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
 	at step_definitions.HomepageSteps.i_am_taken_to_the_about_page(HomepageSteps.java:24)
 	at ✽.Then I am taken to the about page(test.feature:9)
 
-Scenario: Verify a user is able to navigate to the about page  Time elapsed: 0.004 sec  <<< FAILURE!
+Scenario: Verify a user is able to navigate to the about page  Time elapsed: 0.007 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)

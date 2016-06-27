@@ -1,11 +1,10 @@
-package pageobjects;
+package page_objects;
 
 import org.openqa.selenium.WebDriver;
-import java.util.concurrent.TimeUnit;
 
-public class About extends PageObject_Base {
+public class AboutPage extends PageObject_Base {
 
-    public About (WebDriver driver) {super (driver);}
+    public AboutPage(WebDriver driver) {super (driver);}
 
     public boolean verifyYouAreOnThePage(){
         String url = driver.getCurrentUrl();

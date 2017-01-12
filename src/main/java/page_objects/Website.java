@@ -8,6 +8,7 @@ public class Website {
     public static WebDriver driver;
     private static Homepage homepage;
     private static AboutPage aboutPage;
+    private static GooglePage googlePage;
 
     public static Homepage homePage() {
         if (homepage == null){
@@ -21,6 +22,13 @@ public class Website {
             aboutPage = new AboutPage(driver);
         }
         return aboutPage;
+    }
+
+    public static GooglePage getGoogle() {
+        if (googlePage == null) {
+            googlePage = new GooglePage(driver);
+        }
+        return googlePage;
     }
 }
 

@@ -17,7 +17,7 @@ public class Homepage extends PageObject_Base {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how = How.ID, using = "menu-item-22")
+    @FindBy(css = "menu-item-22")
     private WebElement aboutButton;
 
     public void get (){

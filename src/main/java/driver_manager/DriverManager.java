@@ -8,6 +8,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.sql.Driver;
+
 
 public class DriverManager {
 
@@ -15,6 +19,28 @@ public class DriverManager {
     public enum browserType {CHROME, FIREFOX}
     public static browserType browserToUse = browserType.FIREFOX;
     private static browserType currentBrowser;
+
+    public static WebDriver getremoteDriver() {
+        if (driver != null){
+
+            if (currentBrowser == browserToUse){
+                return driver;
+            }
+        }
+
+        return getNewRemoteDriver();
+    }
+
+
+    private static WebDriver getNewRemoteDriver() {
+        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        try {
+            driver = new RemoteWebDriver(new URL(":4444/wd/hub"), capabilities);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return driver;
+    }
 
     public static WebDriver getDriver() {
 

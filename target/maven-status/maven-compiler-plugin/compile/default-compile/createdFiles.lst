@@ -1,8 +1,0 @@
-driver_manager/DriverManager$1.class
-driver_manager/DriverManager.class
-driver_manager/DriverManager$browserType.class
-page_objects/GooglePage.class
-page_objects/PageObject_Base.class
-page_objects/Website.class
-page_objects/AboutPage.class
-page_objects/Homepage.class
